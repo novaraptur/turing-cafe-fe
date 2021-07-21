@@ -36,13 +36,4 @@ describe('page is loaded', () => {
     cy.get('.resy-card')
       .contains('Dean')
   });
-
-  it('should not allow you to create a new reservation if all inputs have not been filled', () => {
-    cy.get('input[name=name]')
-      .type('Dean')
-      .should('have.value', 'Dean')
-      .get('#makeReservationBtn').click()
-    cy.get('.error-message')
-      .contains('Please fill out all inputs')
-  });
 });
