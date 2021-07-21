@@ -17,3 +17,11 @@
   font-family: 'Pacifico', cursive;
   font-size: 50px;
 }
+
+.resy-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  width: 90%;
+}
