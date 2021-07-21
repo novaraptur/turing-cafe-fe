@@ -57,7 +57,7 @@ class Form extends Component {
           value={this.state.numGuests}
           onChange={(event) => this.handleChange(event)}
         />
-        <button onClick={(event) => this.createReservation(event)}>Make Reservation</button>
+        <button id="makeReservationBtn" onClick={(event) => this.createReservation(event)}>Make Reservation</button>
       </form>
     )
   }
