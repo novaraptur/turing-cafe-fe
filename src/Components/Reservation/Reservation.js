@@ -6,7 +6,7 @@ const Reservation = ({reservation}) => {
     <article className="resy-card" id={reservation.id}>
       <h2>{reservation.name}</h2>
       <p>{reservation.time} on {reservation.date}</p>
-      <p>Number {reservation.number}</p>
+      <p>Number of Guests: {reservation.number}</p>
     </article>
   )
 }
