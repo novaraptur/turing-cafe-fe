@@ -21,7 +21,8 @@ class App extends Component {
   }
 
   loadReservationCards() {
-    this.state.reservations.forEach((reservation) => {
+    return this.state.reservations.map((reservation) => {
+      console.log(reservation);
       return <Reservation reservation={reservation} />
     })
   }
