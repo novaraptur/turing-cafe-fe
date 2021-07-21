@@ -4,6 +4,10 @@ import './App.css';
 import Reservation from '../Reservation/Reservation';
 
 class App extends Component {
+  loadReservationCards() {
+    
+  }
+
   render() {
     return (
       <main className="App">
@@ -12,7 +16,7 @@ class App extends Component {
 
         </section>
         <section className='resy-container'>
-          {}
+          {this.loadReservationCards()}
         </section>
       </main>
     )
